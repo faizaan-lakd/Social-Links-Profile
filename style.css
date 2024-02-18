@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 1.4rem;
+    background-color: hsl(0, 0%, 8%);
+}
+
+main {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    min-width: 375px;
+    background-color: hsl(0, 0%, 12%);
+    border-radius: 20px;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 35px;
+    text-align: center;
+}
+
+.name, .quote {
+    color: hsl(0, 0%, 100%);
+}
+
+.name, .location{
+    margin-bottom: 10px;
+}
+
+.name {
+    font-size: 2.4rem;
+    font-weight: 500;
+}
+
+.location {
+    color: hsl(75, 94%, 57%);
+    font-weight: 600;
+}
+
+.quote {
+    margin-top: 20px;
+}
+
+img {
+    border-radius: 100%;
+    width: 75px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.social-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.social {
+    margin: 10px;
+    background-color: hsl(0, 0%, 20%);
+    color: hsl(0, 0%, 100%);
+    width: 80%;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: hsl(75, 94%, 57%);
+    color: hsl(0, 0%, 8%);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 400px) {
+    .container {
+        min-width: 335px;
+    }
+}
